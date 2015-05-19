@@ -1,0 +1,25 @@
+{
+    "name": "toxor88/yii2-widget-switchery",
+    "description": "Enhanced Yii2 wrapper for the Switchery.js plugin.",
+    "keywords": ["yii2", "extension", "widget", "switchery", "form", "checkbox", "jquery", "plugin"],
+    "homepage": "https://github.com/toxor88/yii2-widget-switchery",
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "Steven Cash",
+            "email": "toxor88@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "bower-asset/switchery": "0.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "toxor88\\switchery\\": ""
+        }
+    }
+}
