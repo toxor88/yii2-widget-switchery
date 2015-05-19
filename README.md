@@ -34,7 +34,7 @@ You can refer detailed [documentation and demos](http://abpetkov.github.io/switc
 ## Usage
 
 ```php
-use toxor88\switchery;
+use toxor88\switchery\Switchery;
 use yii\web\JsExpression;
 
 // usage without model
