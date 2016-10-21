@@ -56,6 +56,12 @@ echo Switchery::widget([
         alert("checked: " + this.checked);
     }'),
 ]);
+
+// usage with model
+$form->model($model, 'attribute')->widget(\toxor88\switchery\Switchery::className(), [ // widget options... ]);
+
+// if you use the defualt ActiveField template, there can be multiple labels. To avoid it use:
+$form->model($model, 'attribute')->widget(\toxor88\switchery\Switchery::className(), [ // widget options... ])->label(false);
 ```
 
 ## License
