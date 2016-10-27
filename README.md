@@ -58,10 +58,14 @@ echo Switchery::widget([
 ]);
 
 // usage with model
-$form->model($model, 'attribute')->widget(\toxor88\switchery\Switchery::className(), [ // widget options... ]);
+$form->model($model, 'attribute')->widget(Switchery::className(), [ // widget options... ]);
 
 // if you use the defualt ActiveField template, there can be multiple labels. To avoid it use:
-$form->model($model, 'attribute')->widget(\toxor88\switchery\Switchery::className(), [ // widget options... ])->label(false);
+// the label displays after the slider:
+$form->model($model, 'attribute')->widget(Switchery::className(), [ // widget options... ])->label(false);
+
+// the label displays before the slider:
+$form->model($model, 'attribute')->widget(Switchery::className(), [ 'options' => 'label' => null ])->label('label text or inherited from model');
 ```
 
 ## License
